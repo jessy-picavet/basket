@@ -1,0 +1,188 @@
+
+body{
+    font-family: "Kumbh Sans";
+    width: 375px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+.lightbox{
+    height: 298px;
+    border: 1px solid blue;
+
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border: 1px solid red;
+}
+.container-btn{
+    display: flex;
+}
+.item-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    background:transparent; 
+    outline: none;
+}
+.item-btn-img{
+     display: flex; 
+    border: none; 
+    background: transparent; 
+    outline: none;
+}
+img{
+    padding: 11px 18px 0 0px;
+    border: 1px solid red;
+    width: 21px;
+}
+
+
+.descriptif{
+   height: 200px;
+   border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: flex-start;
+}
+.descriptif h4{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h4{
+    padding: 0.18rem 0 0 0rem;
+    margin: 0.15rem;
+    letter-spacing: 0rem;
+    font-size: 0.91rem;
+    text-transform: uppercase;
+}
+
+h1{
+    padding: 0.68rem 0 0 0.11rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 1.76rem;
+
+}
+
+.item_descriptif {
+    
+   line-height: 1.56rem;
+    width: 21.56rem;
+    font-size: 0.94rem;    
+    padding: 0.062rem 0 0 0.12rem;
+}
+.paiement{
+    width: 363px;
+}
+
+
+.tarifs{
+    padding: 0rem 0rem 0rem 1.68rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price{
+    
+    letter-spacing: 0.1rem;
+    align-items: center;
+    font-size: 1.62rem;
+    font-weight: bold;
+    
+}
+    
+
+.reduc{
+
+    letter-spacing: 0.043rem;
+    font-size: 1rem;
+padding: 0.18rem 6.06rem 0rem 1.68rem;
+
+    
+}
+
+.old-price{
+    letter-spacing: 0.043rem;
+    font-size: 1rem;
+    padding: 0rem 0.75rem 0rem 0rem;
+    
+} 
+
+
+
+.hamburger {
+    margin: 0px 0px 2px -3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 11px 0 0 13px;
+}
+
+
+.nav-menu {
+    display: none; 
+    background-color:white;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    transition: height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0; 
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+.nav-menu.open {
+    display: block;
+    min-height: 841px;
+    width: 250px;
+}
+
+
+
+@media (max-width: 738px) {
+    .nav-menu {
+        display: block;
+        position: static;
+        width: 100px;
+        max-height: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-menu li {
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .hamburger {
+        display: none; 
+    }
+}
